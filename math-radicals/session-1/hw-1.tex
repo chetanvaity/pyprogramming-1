@@ -1,0 +1,111 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{pgffor}
+
+% Set page geometry for ample space
+\geometry{
+  a4paper,
+  margin=1in
+}
+
+% Fix headheight warning
+\setlength{\headheight}{14.5pt}
+
+% Define headers and footers
+\pagestyle{fancy}
+\fancyhf{} % Clear all header and footer fields
+\fancyhead[L]{6 / Radicals / HW-1}
+\fancyhead[R]{Date: \hspace{3cm} Name: \hspace{4cm}}
+\fancyfoot[R]{\thepage\ of \pageref{LastPage}}
+
+% Command for adding vertical space after each problem
+\newcommand{\studentworkspace}{\vspace{1.5cm}}
+\newcommand{\studentsmallworkspace}{\vspace{0.7cm}}
+\newcommand{\blankline}[1]{\underline{\hspace{#1}}}
+
+
+\begin{document}
+
+\section*{\normalsize 1. List all the perfect squares between 1 and 100 (inclusive). Also write their positive square root.}
+\renewcommand{\arraystretch}{2} % Double row height
+\begin{center}
+\begin{tabular}{|c|c|}
+    \hline
+    Perfect Square & Square Root \\
+    \hline
+    1 & 1 \\
+    \hline
+    4 & 2 \\
+    \hline
+    9 & 3 \\
+    \hline
+    & \\
+    \hline
+    & \\
+    \hline
+    & \\
+    \hline
+    & \\
+    \hline
+    & \\
+    \hline
+    & \\
+    \hline
+    & \\
+    \hline
+\end{tabular}
+\end{center}
+
+
+\section*{\normalsize 2. Simplify}
+\begin{enumerate}[label=\alph*.]
+    \item \textcolor{blue}{$\sqrt{16} = 4$}
+        \studentworkspace
+    \item $\sqrt{25}$
+        \studentworkspace
+    \item $\sqrt{81}$
+        \studentworkspace
+    \item $\sqrt{49}$
+        \studentworkspace
+    \item $\sqrt{64}$
+        \studentworkspace
+    \item $\sqrt{9}$
+        \studentworkspace
+    \item $\sqrt{121}$
+        \studentworkspace
+    \item $\sqrt{100}$
+        \studentworkspace
+    \item $\sqrt{36}$
+        \studentworkspace
+    \item $\sqrt{144}$
+        \studentworkspace
+\end{enumerate}
+
+\section*{\normalsize 3. Estimate square roots}
+(Use the filled table in question 1.)
+\begin{enumerate}[label=\alph*.]
+    \item \textcolor{blue}{$\sqrt{13}$ lies between 3 and 4}
+        \studentsmallworkspace
+    \item $\sqrt{20}$ lies between \blankline{1em} and \blankline{1em}
+        \studentsmallworkspace
+    \item $\sqrt{50}$ lies between \blankline{1em} and \blankline{1em}
+        \studentsmallworkspace
+    \item $\sqrt{80}$ lies between \blankline{1em} and \blankline{1em}
+    \studentsmallworkspace
+    \item $\sqrt{5}$ lies between \blankline{1em} and \blankline{1em}
+    \studentsmallworkspace
+    \item $\sqrt{19}$ lies between \blankline{1em} and \blankline{1em}
+    \studentsmallworkspace
+    \item $\sqrt{3}$ lies between \blankline{1em} and \blankline{1em}
+    \studentsmallworkspace
+    \item $\sqrt{140}$ lies between \blankline{1em} and \blankline{1em}
+    \studentsmallworkspace
+\end{enumerate}
+
+\end{document}
