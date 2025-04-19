@@ -1,4 +1,4 @@
-\documentclass[12pt]{article}
+\documentclass[12pt,fleqn]{article}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{geometry}
@@ -22,13 +22,15 @@
 \fancyhf{} % Clear all header and footer fields
 \fancyhead[L]{6 / Radicals / HW-2}
 \fancyhead[R]{Date: \hspace{3cm} Name: \hspace{4cm}}
-\fancyfoot[R]{\thepage\ of \pageref{LastPage}}
+\fancyfoot[R]{\thepage\ / \pageref{LastPage}}
 
 % Command for adding vertical space after each problem
 \newcommand{\studentworkspace}{\vspace{1.5cm}}
 \newcommand{\studentsmallworkspace}{\vspace{0.7cm}}
 \newcommand{\blankline}[1]{\underline{\hspace{#1}}}
 
+% Set math indentation
+\setlength{\mathindent}{2cm}
 
 \begin{document}
 
@@ -59,15 +61,13 @@
     \hline
     & \\
     \hline
-    & \\
-    \hline
 \end{tabular}
 \end{center}
 
 
 \section*{\normalsize 2. Simplify}
 \begin{enumerate}[label=\alph*.]
-    \item \textcolor{blue}{$\sqrt{144} = 12$}
+    \item $\sqrt{144} \textcolor{blue}{= 12}$
         \studentsmallworkspace
     \item $\sqrt{225}$
         \studentsmallworkspace
@@ -90,48 +90,55 @@
 \end{enumerate}
 
 
-\section*{normalsize 3. Simplify}
-\begin{enumerate}[label=\alph*.]
-    \item \textclolr{blue}{}$-\sqrt{\frac{1}{25}} = -\frac{\sqrt{1}}{\sqrt{25}} = -\frac{1}{5}$}
-        \studentsmallworkspace
-    \item $-\sqrt{144}$
-        \studentworkspace
---CV--
-\subsection*{d.} $\sqrt{15^2}$
-\studentworkspace
-
-\subsection*{e.} $(\sqrt{6})^2$
-\studentworkspace
-
-\subsection*{f.} $-\sqrt{81}$
-\studentworkspace
-
-\bigskip
-
 \begin{center}
 \fbox{\parbox{\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax}{
-For any nonnegative real numbers $a$ and $b$:
-\begin{align*}
-\sqrt{ab} &= \sqrt{a} \cdot \sqrt{b} \\
-\sqrt{\frac{a}{b}} &= \frac{\sqrt{a}}{\sqrt{b}} \quad \text{when } b > 0
-\end{align*}
+    For any nonnegative real numbers $a$ and $b$:
+    \begin{align*}
+    \sqrt{ab} &= \sqrt{a} \cdot \sqrt{b} \\
+    \sqrt{\frac{a}{b}} &= \frac{\sqrt{a}}{\sqrt{b}} \quad \text{when } b > 0
+    \end{align*}
 }}
 \end{center}
 
-\bigskip
-
-\section*{\normalsize 2. Evaluate}
-
-\subsection*{a.} $\sqrt{100}$
-\studentworkspace
-
-\subsection*{b.} $\sqrt{121}$
-\studentworkspace
-
-\subsection*{c.} $-\sqrt{400}$
-\studentworkspace
-
-\subsection*{d.} $\sqrt{625}$
-\studentworkspace
+\section*{\normalsize 4. Simplify}
+\begin{enumerate}[label=\alph*.]
+    \item $\sqrt{18}$
+        \textcolor{blue}{
+        \begin{align*}
+        \sqrt{18} &= \sqrt{9 \cdot 2} \\
+                  &= \sqrt{9} \cdot \sqrt{2} \\
+                  &= 3 \sqrt{2}
+        \end{align*}
+        }
+        \studentsmallworkspace
+    \item $\sqrt{50}$
+        \studentworkspace
+    \item $\sqrt{32}$
+        \studentworkspace
+    \item $\sqrt{72}$
+        \studentworkspace
+    \item $\sqrt{200}$
+        \studentworkspace
+    \item $\sqrt{300}$
+        \studentworkspace
+    \item $\sqrt{75}$
+        \studentworkspace
+    \item $\sqrt{45}$
+        \studentworkspace
+    \item $\sqrt{8}$
+        \studentworkspace
+    \item $\sqrt{48}$
+        \studentworkspace
+    \item $\sqrt{125}$
+        \studentworkspace
+    \item $\sqrt{80}$
+        \studentworkspace
+    \item $\sqrt{12}$
+        \studentworkspace
+    \item $\sqrt{98}$
+        \studentworkspace
+    \item $\sqrt{288}$
+        \studentworkspace
+\end{enumerate}
 
 \end{document}
