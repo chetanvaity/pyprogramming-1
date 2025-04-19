@@ -1,0 +1,83 @@
+\documentclass[fleqn,12pt]{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{pgffor}
+
+% Set page geometry for ample space
+\geometry{
+  a4paper,
+  margin=1in
+}
+
+% Fix headheight warning
+\setlength{\headheight}{14.5pt}
+
+% Define headers and footers
+\pagestyle{fancy}
+\fancyhf{} % Clear all header and footer fields
+\fancyhead[L]{6 / Radicals / HW-4}
+\fancyhead[R]{Date: \hspace{3cm} Name: \hspace{4cm}}
+\fancyfoot[R]{\thepage\ of \pageref{LastPage}}
+
+% Set math indentation
+\setlength{\mathindent}{2cm}
+
+% Command for adding vertical space after each problem
+\newcommand{\studentworkspace}{\vspace{1.5cm}}
+\newcommand{\studentsmallworkspace}{\vspace{0.7cm}}
+\newcommand{\studentxlargeworkspace}{\vspace{3.5cm}}
+\newcommand{\blankline}[1]{\underline{\hspace{#1}}}
+
+
+\begin{document}
+
+\section*{\normalsize 1. Simplify}
+\begin{enumerate}[label=\alph*.]
+    \item $\sqrt{2} \cdot \sqrt{8}$
+        \textcolor{blue}{
+        \begin{align*}
+            \sqrt{2} \cdot \sqrt{8} &= \sqrt{2} \cdot \sqrt{2 \cdot 4} \\
+                                    &= \sqrt{2} \cdot (\sqrt{2} \cdot \sqrt{4}) \\
+                                    &= \sqrt{2} \cdot \sqrt{2} \cdot \sqrt{4} \\
+                                    &= 2 \cdot 2 \\
+                                    &= 4
+        \end{align*}
+        }
+    \item $\sqrt{3}\sqrt{3}$
+        \studentworkspace
+    \item $2\sqrt{3} \cdot 5\sqrt{6}$
+        \studentxlargeworkspace
+    \item $3\sqrt{5} \cdot 4\sqrt{10}$
+        \studentxlargeworkspace
+    \item $2\sqrt{6} \cdot 2\sqrt{8}$
+        \studentxlargeworkspace
+    \item $5\sqrt{2} \cdot 2\sqrt{12}$
+        \studentxlargeworkspace
+    \item $\frac{\sqrt{8}}{\sqrt{2}}$
+        \studentxlargeworkspace
+    \item $\frac{\sqrt{18}}{\sqrt{3}}$
+        \textcolor{blue}{
+        \begin{align*}
+            \frac{\sqrt{18}}{\sqrt{3}} &= \frac{\sqrt{6 \cdot 3}}{\sqrt{3}} \\
+                                       &= \frac{\sqrt{6} \sqrt{3}}{\sqrt{3}} \\
+                                       &= \sqrt{6}
+        \end{align*}
+        }
+    \item $\frac{\sqrt{8}}{\sqrt{2}}$
+        \studentxlargeworkspace
+    \item $\frac{\sqrt{50}}{\sqrt{25}}$
+        \studentxlargeworkspace
+    \item $\frac{\sqrt{128}\sqrt{2}}{2}$
+        \studentxlargeworkspace
+    \item $\frac{\sqrt{5}}{\sqrt{125}}$
+        \studentxlargeworkspace
+    \item $\frac{\sqrt{54}}{3\sqrt{3}}$
+        \studentxlargeworkspace
+\end{enumerate}
+
+\end{document}
