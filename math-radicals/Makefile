@@ -1,8 +1,8 @@
 pdf: all
 
-all: hw-1 hw-2 hw-3
+all: hw-1 hw-2 hw-3 hw-4
 
-PDFLATEXCMD = pdflatex -include-directory=cls -output-directory=out 
+PDFLATEXCMD = TEXINPUTS=cls: pdflatex -output-directory=out
 
 hw-1:
 	$(PDFLATEXCMD) hw-1.tex
