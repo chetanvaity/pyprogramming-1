@@ -1,32 +1,32 @@
 pdf: all
 
-all: notes hw-1 hw-2 hw-3 hw-4 hw-5
+all: notes1 notes2 q1 hw1 hw2 hw3 hw4 hw5
 
 PDFLATEXCMD = TEXINPUTS=cls: pdflatex -output-directory=out
 
-hw-1:
-	$(PDFLATEXCMD) hw-1.tex
-	$(PDFLATEXCMD) hw-1.tex
+hw1:
+	$(PDFLATEXCMD) hw1.tex && $(PDFLATEXCMD) hw1.tex
 
-hw-2:
-	$(PDFLATEXCMD) hw-2.tex
-	$(PDFLATEXCMD) hw-2.tex
+hw2:
+	$(PDFLATEXCMD) hw2.tex && $(PDFLATEXCMD) hw2.tex
 
-hw-3:
-	$(PDFLATEXCMD) hw-3.tex
-	$(PDFLATEXCMD) hw-3.tex
+hw3:
+	$(PDFLATEXCMD) hw3.tex && $(PDFLATEXCMD) hw3.tex
 
-hw-4:
-	$(PDFLATEXCMD) hw-4.tex
-	$(PDFLATEXCMD) hw-4.tex
+hw4:
+	$(PDFLATEXCMD) hw4.tex && $(PDFLATEXCMD) hw4.tex
 
-hw-5:
-	$(PDFLATEXCMD) hw-5.tex
-	$(PDFLATEXCMD) hw-5.tex
+hw5:
+	$(PDFLATEXCMD) hw5.tex && $(PDFLATEXCMD) hw5.tex
 
-notes:
-	$(PDFLATEXCMD) notes.tex
-	$(PDFLATEXCMD) notes.tex
+notes1:
+	$(PDFLATEXCMD) notes1.tex && $(PDFLATEXCMD) notes1.tex
+
+notes2:
+	$(PDFLATEXCMD) notes2.tex && $(PDFLATEXCMD) notes2.tex
+
+q1:
+	$(PDFLATEXCMD) q1.tex && $(PDFLATEXCMD) q1.tex
 
 
 clean:
