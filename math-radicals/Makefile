@@ -2,7 +2,7 @@ pdf: all
 
 all: notes1 notes2 q1 hw1 hw2 hw3 hw4 hw5
 
-PDFLATEXCMD = TEXINPUTS=cls: pdflatex -output-directory=out
+PDFLATEXCMD = TEXINPUTS=../latex-cls: pdflatex -output-directory=out
 
 hw1:
 	$(PDFLATEXCMD) hw1.tex && $(PDFLATEXCMD) hw1.tex
