@@ -16,6 +16,9 @@ q1:
 hw3-1:
 	$(PDFLATEXCMD) hw3-1.tex && $(PDFLATEXCMD) hw3-1.tex
 
+hw4-1:
+	$(PDFLATEXCMD) hw4-1.tex && $(PDFLATEXCMD) hw4-1.tex
+
 clean:
 	rm -f out/*.log out/*.aux
 

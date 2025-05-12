@@ -32,11 +32,24 @@
 
 % Initialize \@hwname with a default value
 \newcommand{\@hwname}{Unnamed HW}
+
 % Header and footer setup
 \pagestyle{fancy}
-\fancyhf{}
-\fancyhead[L]{\@hwname} % Left header: Homework name must be defined in tex file
-\fancyhead[R]{Date: \hspace{3cm} Name: \hspace{4cm}} % Right header
+
+% Define a custom first-page style
+\fancypagestyle{firstpage}{
+    \fancyhf{}
+    \fancyhead[L]{\parbox{6cm}{\@hwname \\ \footnotesize{Due: 13 May 2025}}} % Left header: Homework name must be defined in tex file
+    \fancyhead[R]{Date: 12 May 2025 \hspace{1cm} Name: \hspace{4cm}} % Right header
+    \fancyfoot[R]{\thepage\ of \pageref{LastPage}}
+}
+
+% Apply the first-page style
+\thispagestyle{firstpage}
+
+% Header/Footer for subsequent pages,
+\fancyhead[L]{\parbox{6cm}{\@hwname \\ \footnotesize{Due: 13 May 2025}}} % Left header: Homework name must be defined in tex file
+\fancyhead[R]{} % Right header
 \fancyfoot[R]{\thepage\ of \pageref{LastPage}}
 
 % Command to set homework name (REQUIRED)
