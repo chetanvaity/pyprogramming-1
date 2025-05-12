@@ -10,6 +10,11 @@ hw1:
 notes1:
 	$(PDFLATEXCMD) notes1.tex && $(PDFLATEXCMD) notes1.tex
 
+q1:
+	$(PDFLATEXCMD) q1.tex && $(PDFLATEXCMD) q1.tex
+
+hw3-1:
+	$(PDFLATEXCMD) hw3-1.tex && $(PDFLATEXCMD) hw3-1.tex
 
 clean:
 	rm -f out/*.log out/*.aux

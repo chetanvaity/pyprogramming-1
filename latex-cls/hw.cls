@@ -43,12 +43,14 @@
 \newcommand{\hwname}[1]{\renewcommand{\@hwname}{#1}}
 
 % Command for adding vertical space after each problem
-\newcommand{\studentworkspace}{\vspace{1.5cm}}
-\newcommand{\studentsmallworkspace}{\vspace{0.7cm}}
-\newcommand{\studentlargeworkspace}{\vspace{3.0cm}}
-\newcommand{\studentxlargeworkspace}{\vspace{4.0cm}}
+\newcommand{\studentworkspace}{\vspace{3.0cm}}
+\newcommand{\studentsmallworkspace}{\vspace{1.0cm}}
+\newcommand{\studentlargeworkspace}{\vspace{4.0cm}}
+\newcommand{\studentxlargeworkspace}{\vspace{6.0cm}}
+\newcommand{\studentxxlargeworkspace}{\vspace{10.0cm}}
 
-% Blank line to give explicit place for the answer
+
+% Blank line to give explicit place for the answer (eg: \blankline{4em})
 \newcommand{\blankline}[1]{\underline{\hspace{#1}}}
 
 % Make text faint 
@@ -56,3 +58,12 @@
 
 % Placeholder
 \newcommand{\placeholder}{\tikz{\draw[dotted] (0,0) rectangle (0.5,0.3);}}
+
+% Dotted line for answers (eg: \dottedline{2em})
+\newcommand{\dottedline}[1][\linewidth]{%
+  \par\noindent
+  \begin{tikzpicture}
+    \draw[line width=0.4pt, gray, dotted] (0,0) -- (\dimexpr#1\relax,0);
+  \end{tikzpicture}\par
+  \vspace{0.5em} % Add some vertical space after the line, adjustable as needed
+}
