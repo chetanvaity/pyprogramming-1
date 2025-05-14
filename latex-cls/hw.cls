@@ -16,7 +16,6 @@
 \RequirePackage{pgffor}
 \RequirePackage{ulem} % Underlines
 \RequirePackage{tikz} % Blank boxes, placeholders etc.
-\RequirePackage{xcolor} % Already in hw.cls, shown for clarity
 \RequirePackage{graphicx} 
 
 % Page layout
@@ -39,8 +38,9 @@
 % Define a custom first-page style
 \fancypagestyle{firstpage}{
     \fancyhf{}
-    \fancyhead[L]{\parbox{6cm}{\@hwname \\ \footnotesize{Due: 13 May 2025}}} % Left header: Homework name must be defined in tex file
-    \fancyhead[R]{Date: 12 May 2025 \hspace{1cm} Name: \hspace{4cm}} % Right header
+%    \fancyhead[L]{\parbox{6cm}{\@hwname \\ \footnotesize{Due: \tomorrow}}} % Left header: Homework name must be defined in tex file
+    \fancyhead[L]{\parbox{6cm}{\@hwname}} % Left header: Homework name must be defined in tex file
+    \fancyhead[R]{Date: \today \hspace{1cm} Name: \hspace{4cm}} % Right header
     \fancyfoot[R]{\thepage\ of \pageref{LastPage}}
 }
 
@@ -62,14 +62,13 @@
 \newcommand{\studentxlargeworkspace}{\vspace{6.0cm}}
 \newcommand{\studentxxlargeworkspace}{\vspace{10.0cm}}
 
-
 % Blank line to give explicit place for the answer (eg: \blankline{4em})
 \newcommand{\blankline}[1]{\underline{\hspace{#1}}}
 
-% Make text faint 
+% Make text faint (eg: \faint{Hello there})
 \newcommand{\faint}[1]{\textcolor{black!50}{#1}}
 
-% Placeholder
+% Placeholder (eg: Small placeholder square)
 \newcommand{\placeholder}{\tikz{\draw[dotted] (0,0) rectangle (0.5,0.3);}}
 
 % Dotted line for answers (eg: \dottedline{2em})

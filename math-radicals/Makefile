@@ -28,6 +28,11 @@ notes2:
 q1:
 	$(PDFLATEXCMD) q1.tex && $(PDFLATEXCMD) q1.tex
 
+q2:
+	$(PDFLATEXCMD) q2.tex && $(PDFLATEXCMD) q2.tex
+
+wp1:
+	$(PDFLATEXCMD) wp1.tex && $(PDFLATEXCMD) wp1.tex
 
 clean:
 	rm -f out/*.log out/*.aux
