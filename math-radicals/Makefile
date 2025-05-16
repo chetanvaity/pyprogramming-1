@@ -19,6 +19,9 @@ hw4:
 hw5:
 	$(PDFLATEXCMD) hw5.tex && $(PDFLATEXCMD) hw5.tex
 
+hw6:
+	$(PDFLATEXCMD) hw6.tex && $(PDFLATEXCMD) hw6.tex
+
 notes1:
 	$(PDFLATEXCMD) notes1.tex && $(PDFLATEXCMD) notes1.tex
 

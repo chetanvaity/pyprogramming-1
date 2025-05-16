@@ -48,7 +48,8 @@
 \thispagestyle{firstpage}
 
 % Header/Footer for subsequent pages,
-\fancyhead[L]{\parbox{6cm}{\@hwname \\ \footnotesize{Due: 13 May 2025}}} % Left header: Homework name must be defined in tex file
+%\fancyhead[L]{\parbox{6cm}{\@hwname \\ \footnotesize{Due: 13 May 2025}}} % Left header: Homework name must be defined in tex file
+\fancyhead[L]{\parbox{6cm}{\@hwname}} % Left header: Homework name must be defined in tex file
 \fancyhead[R]{} % Right header
 \fancyfoot[R]{\thepage\ of \pageref{LastPage}}
 
